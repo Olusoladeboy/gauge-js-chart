@@ -5,10 +5,14 @@
 var Dial = function(container) {
     this.container = container;
     this.size = this.container.dataset.size;
+    this.size = 400;
+    console.log(this.container.dataset)
     this.strokeWidth = this.size / 8;
     this.radius = (this.size / 2) - (this.strokeWidth / 2);
-    this.value = this.container.dataset.value;
-    this.direction = this.container.dataset.arrow;
+    this.value = 20;
+    // this.value = this.container.dataset.value;
+    this.direction = 'up';
+    // this.direction = this.container.dataset.arrow;
     this.svg;
     this.defs;
     this.slice;
