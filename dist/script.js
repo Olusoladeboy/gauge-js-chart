@@ -177,6 +177,7 @@ Dial.prototype.setValue = function(value) {
 // Usage
 //
 
-var containers = document.getElementsByClassName("chart");
-var dial = new Dial(containers[0]);
+var containers = document.getElementById("gauge-chart");
+console.log(containers)
+var dial = new Dial(containers);
 dial.animateStart();
